@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+        }
+        .main{
+            height: 100vh;
+        animation-name: bg;
+        animation-duration: 8s;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        background-color: black;
+        
+
+        }
+        img{
+            z-index: 9;
+            animation-name: img;
+        animation-duration: 8s;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+ 
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        opacity: 0;
+
+        }
+    .bg{
+        background-image:url('bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+        height: 100vh;
+        background-attachment: fixed;
+        animation-name: example;
+        animation-duration: 4s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+
+        
+    }
+    @keyframes example {
+ 
+  to { opacity: 1; }
+}
+@keyframes bg {
+  from {}
+  to {background-color: rgb(0, 0, 0); }
+}
+@keyframes img {
+  from {opacity: 0; }
+  to {opacity: 1; top:10% }
+}
+
+/* The element to apply the animation to */
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="main">
+            <img src="https://pngimg.com/uploads/moon/moon_PNG19.png" alt="" height="100" width="100">
+            <div class="bg">
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
